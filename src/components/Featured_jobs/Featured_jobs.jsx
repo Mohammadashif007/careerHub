@@ -13,13 +13,13 @@ const Featured_jobs = () => {
 
 
     return (
-        <div>
+        <div >
             <h2 className="text-4xl font-bold">Featured Jobs</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
                 similique?
             </p>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 gap-4 my-10">
                 {jobs.slice(0, dataLength).map((job) => (
                     <Job key={job.id} job={job}></Job>
                 ))}
